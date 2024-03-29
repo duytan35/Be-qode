@@ -19,7 +19,7 @@ export class PostsController {
       GetResponse({
         data: newPost,
         dataType: PostDto,
-        message: 'Create file successfully',
+        message: 'Create post successfully',
       }),
     );
   }
@@ -32,7 +32,6 @@ export class PostsController {
       GetResponse({
         data: posts,
         dataType: PostDto,
-        message: 'Create file successfully',
       }),
     );
   }
