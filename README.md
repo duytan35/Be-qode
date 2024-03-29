@@ -13,3 +13,6 @@ S3_SECRET_KEY=WdIHLDaPNZsamhqywiIcBmOmstO9MsyGvPYn6DG7
 S3_BUCKET_NAME=webnc-2023
 S3_BUCKET_REGION=ap-southeast-2
 - Step 4: npm start
+
+
+I have used AWS S3 to store image, config swagger for endpoints
