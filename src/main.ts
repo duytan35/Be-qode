@@ -16,7 +16,7 @@ async function bootstrap() {
   //app config
   app.setGlobalPrefix('api/v1');
   app.enableCors({
-    origin: true,
+    origin: ['http://localhost:3000', 'https://fe-qode.vercel.app'],
     credentials: true,
   });
 
@@ -35,7 +35,7 @@ async function bootstrap() {
 
   //setup swagger
   const config = new DocumentBuilder()
-    .setTitle('EngVision API')
+    .setTitle('Backend API')
     .setDescription('Click Try it out to see the API in action')
     .setVersion('1.0')
     .build();
