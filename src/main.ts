@@ -14,7 +14,11 @@ async function bootstrap() {
   //app config
   app.setGlobalPrefix('api/v1');
   app.enableCors({
-    origin: 'https://fe-qode.vercel.app',
+    origin: ['https://fe-qode.vercel.app', 'http://localhost:3000'],
+    allowedHeaders:
+      'Origin, X-Requested-With, Content-Type, Accept, Authorization', // Allowed request headers
+
+    preflightContinue: false,
     credentials: true,
   });
 
