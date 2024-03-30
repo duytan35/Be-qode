@@ -5,8 +5,6 @@ import {
   SwaggerCustomOptions,
   SwaggerModule,
 } from '@nestjs/swagger';
-import cookieParser from 'cookie-parser';
-import helmet from 'helmet';
 import { AppModule } from './app.module';
 
 async function bootstrap() {
@@ -19,10 +17,6 @@ async function bootstrap() {
     origin: 'https://fe-qode.vercel.app',
     credentials: true,
   });
-
-  //setup middleware
-  app.use(cookieParser());
-  app.use(helmet({ crossOriginResourcePolicy: false }));
 
   //setup pipes
   app.useGlobalPipes(
