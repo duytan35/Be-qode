@@ -10,9 +10,9 @@ import { CommentsModule } from './modules/comments/comments.module';
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
     MongooseModule.forRoot(process.env.MONGO_URI),
+    CommentsModule,
     FilesModule,
     PostsModule,
-    CommentsModule,
   ],
 })
 export class AppModule implements NestModule {
